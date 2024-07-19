@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Blog from "./pages/Blog";
-import ContactMe from "./pages/ContactMe";
+import { Home, About, Blog, ContactMe } from "./pages";
 
 function App() {
   return (
@@ -14,13 +11,16 @@ function App() {
       <div className="App">
         <header>
           <Navbar />
+          <div className="navbar-curve"/>
+        </header>
+        <body>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact-me" element={<ContactMe />} />
           </Routes>
-        </header>
+        </body>
       </div>
     </>
   );

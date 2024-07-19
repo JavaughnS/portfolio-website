@@ -1,9 +1,7 @@
-:root {
-    --my-gradient: linear-gradient(180deg, rgba(32, 82, 135, 0.8), rgba(32, 82, 135, 1));
-}
-
 .App {
-    background: var(--my-gradient);
+    --app-gradient: linear-gradient(180deg, rgba(32, 82, 135, 0.8), rgba(32, 82, 135, 1));
+
+    background: var(--app-gradient);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -22,8 +20,33 @@
 }
 
 .App-nav {
-    background: linear-gradient(180deg, rgba(32, 82, 135, 0.8), rgba(32, 82, 135, 0.804));
+    --emphasis-color-rgb: 0, 0, 0;
+    --navbar-active-color: rgba(var(--emphasis-color-rgb), 1);
+    --navbar-gradient: linear-gradient(180deg, rgba(32, 82, 135, 0.8), rgba(32, 82, 135, 0.804));
+
+    background: var(--navbar-gradient);
     box-shadow: 0 0 10px black;
+}
+
+.App-nav ul {
+    padding: 0;
+    margin: 0 0 0 5rem;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.App-nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.App-nav .active {
+    color: var(--navbar-active-color);
+}
+
+.App-nav li:not(.active):hover {
+    color: var(--navbar-active-color);
 }
 
 .App-link {

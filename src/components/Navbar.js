@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link, NavLink } from "react-router-dom";
 import MouseTrail from "./MouseTrail";
 import ToggleSwitch from "./ToggleSwitch";
 
@@ -6,7 +7,7 @@ function Navbar() {
     const [trailDisabled, setTrailDisabled] = useState(true);
     const [trailType, setTrailType] = useState(false);
     // let languages = ["A", "B", "C", "D", "E"];
-    // let employers = ["F", "G", "H"];
+    // let employers = ["F", "G", "You?"];
     const handleToggle = (id, isChecked) => {
       console.log(trailDisabled);
       if (id === "mouseTrailStatus") {
@@ -32,9 +33,10 @@ function Navbar() {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div>
-          <a class="navbar-brand m-2" href="#">
+          {/* // TODO: change to button that toggles light and dark theme */}
+          <Link class="navbar-brand m-2" href="/"> 
             JS
-          </a>
+          </Link>
         </div>
         <div className="nav-switch">
           <ToggleSwitch
@@ -57,20 +59,28 @@ function Navbar() {
           />
         </div>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav justify-content-center">
-            <a class="nav-link active" aria-current="page" href="#">
-              Home
-            </a>
-            <a class="nav-link" href="#">
-              About
-            </a>
-            <a class="nav-link" href="#">
-              Projects
-            </a>
-            <a class="nav-link" href="#">
-              Contact
-            </a>
-          </div>
+          <ul class="navbar-nav" aria-current="page">
+            <li class="nav-item">
+              <NavLink class="nav-link" to="/">
+                Home
+              </NavLink>
+            </li>
+            <li class="nav-item">
+              <NavLink class="nav-link" to="/about">
+                About
+              </NavLink>
+            </li>
+            <li class="nav-item">
+              <NavLink class="nav-link" to="/blog">
+                Blog
+              </NavLink>
+            </li>
+            <li class="nav-item">
+              <NavLink class="nav-link" to="/contact-me">
+                Contact
+              </NavLink>
+            </li>
+          </ul>
         </div>
         <form class="d-flex justify-content-end" role="search">
           <input
