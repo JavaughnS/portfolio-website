@@ -1,9 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
+import "./App.css"; // Note to self: later imports will overwrite earlier ones
 import Navbar from "./components/Navbar";
 import { Home, About, Blog, ContactMe } from "./pages";
+import SiteFooter from "./components/SiteFooter";
 
 function App() {
   return (
@@ -11,7 +12,6 @@ function App() {
       <div className="App">
         <header>
           <Navbar />
-          <div className="navbar-curve"/>
         </header>
         <body>
           <Routes>
@@ -21,6 +21,9 @@ function App() {
             <Route path="/contact-me" element={<ContactMe />} />
           </Routes>
         </body>
+        <footer>
+          <SiteFooter />
+        </footer>
       </div>
     </>
   );
