@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css"; // Note to self: later imports will overwrite earlier ones
 import Navbar from "./components/Navbar";
-import { Home, About, Blog, ContactMe } from "./pages";
+import { Home, About, Projects, Blog, ContactMe } from "./pages";
 import SiteFooter from "./components/SiteFooter";
 
 function App() {
@@ -11,12 +11,15 @@ function App() {
     <>
       <div className="App">
         <header>
+          {" "}
+          {/* comment out header tags to stick navbar */}
           <Navbar />
         </header>
         <body>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact-me" element={<ContactMe />} />
           </Routes>

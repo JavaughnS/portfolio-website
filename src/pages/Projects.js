@@ -1,13 +1,14 @@
-import React from 'react'
-import Card from '../components/Card'
-import Cards from '../components/Cards'
+import React from "react";
+import CardDeck from "../components/CardDeck";
+import InfoCard from "../components/InfoCard";
 
 function Projects() {
   return (
-    <Cards>
-        
-    </Cards>
-  )
+    <div>
+      <h4>Latest Project Posts</h4>
+      <CardDeck />
+    </div>
+  );
 }
 
-export default Projects
+export default Projects;

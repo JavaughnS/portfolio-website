@@ -1,16 +1,14 @@
-import React from 'react'
-import Card from '../components/Card'
-import Cards from '../components/Cards'
+import React from "react";
+import CardDeck from "../components/CardDeck";
+import InfoCard from "../components/InfoCard";
 
 function Blog() {
   return (
-    <Cards
-      classes='deck blog-deck'
-      headerText={<span>Coming Soon!</span>}
-    >
-      <Card/>
-    </Cards>
-  )
+    <div>
+      <h4>Latest Blog Posts</h4>
+      <CardDeck />
+    </div>
+  );
 }
 
-export default Blog
+export default Blog;
