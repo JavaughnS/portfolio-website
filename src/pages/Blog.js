@@ -5,10 +5,10 @@ import Cards from '../components/Cards'
 function Blog() {
   return (
     <Cards
-      classes='cards blog-cards'
+      classes='deck blog-deck'
       headerText={<span>Coming Soon!</span>}
     >
-      <Card></Card>
+      <Card/>
     </Cards>
   )
 }

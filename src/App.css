@@ -9,6 +9,10 @@
     font-size: calc(10px + 2vmin);
 }
 
+.section-title {
+    padding-bottom: 0.25rem;
+}
+
 /* header {
     position: sticky;
     top: 0;
@@ -96,20 +100,23 @@ body {
 }
 
 #home-upper-content {
-    display: inline-flex;
+    display: inline-block;
+    margin: 0.75rem 0 1rem 0;
     width: 100%;
 }
 
 #home-lower-content {
-    margin: 20px 0 0 0;
+    display: grid;
 }
 
-.pfp-container {
-    position: relative;
-    width: 30vw;
-    height: 440px;
-    padding: 0;
-    overflow: clip;
+.identification-section {
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    width: 620px;
+    min-width: 300px;
+    height: auto;
+    margin-right: 30px;
+    vertical-align: top;
 }
 
 .pfp {
@@ -120,6 +127,68 @@ body {
     transform: scale(1.5);
     object-fit: cover;
 }
+
+.pfp-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 2rem;
+    width: 280px;
+    height: 440px;
+    overflow: clip;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    vertical-align: top;
+}
+
+.intro-blurb {
+    /* border: 2px solid yellow; */
+    display: inline-block;
+    margin: 0;
+    padding-top: 105px;
+    height: 440px;
+    width: 285px;
+    
+    color:rgb(34, 32, 32);
+}
+
+.blurb-plus {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.projects-preview {
+  /* border: 2px solid yellow; */
+  display: inline-block;
+  width: 788px;
+  min-width: 300px;
+  vertical-align: top;
+}
+
+.blog-preview {
+    border: 2px solid yellow;
+    display: block;
+    width: 100vw;
+    height: auto;
+}
+
+/* @media only screen and (min-width: 769px) {
+    .App {
+    width: 100%;
+  }
+} */
+
+/* About page styles */
+
+
+/* Blog page styles */
+/* .blog-deck {
+  
+} */
+
+/* Project page styles */
+/* .projects-deck {
+
+} */
 
 /* Artifacts */
 /* .App-logo {
