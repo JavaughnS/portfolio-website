@@ -2,7 +2,7 @@ import React from "react";
 import CardDeck from "../components/CardDeck";
 import ImageCard from "../components/ImageCard";
 import InfoCard from "../components/InfoCard";
-import { FetchText } from "../helpers/JSONHelper";
+// import { FetchText } from "../helpers/JSONHelper";
 import * as myConstants from "../constants";
 
 function Home() {
