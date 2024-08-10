@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react'
 
 function CollapsibleCard({cardClass, titleClass, title, children}) {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const ref = useRef();
-  const [height, setHeight] = useState();
+//   const [isExpanded, setIsExpanded] = useState(false);
+//   const ref = useRef();
+//   const [height, setHeight] = useState();
 //   const handleToggle = e => {
 //     e.preventDefault(); // prevents page from refreshing
 //     setIsExpanded(!isExpanded);
