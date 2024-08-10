@@ -6,7 +6,8 @@ function BasicCard({ cardClasses, title, description, path }) {
   return (
     <Link className={cardClasses} to={path}>
         <div className="card-info">
-            <h5 className="card-text">{title}</h5>
+            {title && <h5 className="card-title">{title}</h5>}
+            {description && <p className="card-text">{description}</p>}
         </div>
     </Link>
   );

@@ -76,6 +76,11 @@ function Navbar() {
               </NavLink>
             </li>
             <li class="nav-item">
+              <NavLink class="nav-link" to="/demos">
+                Demos
+              </NavLink>
+            </li>
+            <li class="nav-item">
               <NavLink class="nav-link" to="/blog">
                 Blog
               </NavLink>
