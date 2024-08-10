@@ -1,7 +1,6 @@
 import React from 'react';
 import CollapsibleCard from '../components/CollapsibleCard';
 import * as myConstants from "../constants";
-import { Link } from 'react-router-dom';
 
 function About() {
   return (
@@ -19,14 +18,14 @@ function About() {
             </a> <span>&#183;</span> <a
               href={myConstants.LINKEDIN_URL}
               target='_blank'
-              rel="noopener"
+              rel="noopener noreferrer"
               aria-label='LinkedIn'
             >
               LinkedIn
             </a> <span>&#183;</span> <a
               href={myConstants.GITHUB_URL}
               target='_blank'
-              rel="noopener"
+              rel="noopener noreferrer"
               aria-label='Github'
             >
               GitHub

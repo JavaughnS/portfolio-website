@@ -1,11 +1,11 @@
 import React, {useState} from "react";
 import { Link, NavLink } from "react-router-dom";
-import MouseTrail from "./MouseTrail";
+// import MouseTrail from "./MouseTrail";
 import ToggleSwitch from "./ToggleSwitch";
 
 function Navbar() {
     const [trailDisabled, setTrailDisabled] = useState(true);
-    const [trailType, setTrailType] = useState(false);
+    // const [trailType, setTrailType] = useState(false);
     // let languages = ["A", "B", "C", "D", "E"];
     // let employers = ["F", "G", "You?"];
     const handleToggle = (id, isChecked) => {

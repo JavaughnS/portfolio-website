@@ -3,7 +3,7 @@ import CardDeck from "../components/CardDeck";
 import ImageCard from "../components/ImageCard";
 import InfoCard from "../components/InfoCard";
 // import { FetchText } from "../helpers/JSONHelper";
-import * as myConstants from "../constants";
+// import * as myConstants from "../constants";
 
 function Home() {
   // const INTRO_BLURB = {"Welcome to my website!\nIn case you've made it this
