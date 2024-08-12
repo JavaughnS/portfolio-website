@@ -6,7 +6,7 @@
         },
         "experience": [
             {
-                "employer": "Amazon Web Services",
+                "entity": "Amazon Web Services",
                 "title": "Systems Development Engineer",
                 "start": "02/2022",
                 "end": "10/2023",
@@ -23,50 +23,66 @@
         ],
         "education": [
             {
-                "institution": "McMaster University",
+                "entity": "McMaster University",
                 "title": "Bachelor of Technology, Automation Engineering Technology Co-op",
                 "start": "09/2016",
                 "end": "06/2021",
-                "details": ""
+                "details": "A multidisciplinary program at the intersection of chemical, mechanical, electrical, and computer engineering."
+            },
+            {
+                "entity": "Mohawk College",
+                "title": "Advanced Diploma in Chemical Engineering Technology - Process Automation",
+                "start": "09/2016",
+                "end": "06/2021",
+                "details": "A component of the B.Tech degree focused on chemical engineering in the context of industrial manufacturing."
+            },
+            {
+                "entity": "Mohawk College",
+                "title": "Certificate in Business",
+                "start": "09/2016",
+                "end": "06/2021",
+                "details": "An ACBSP accredited business degree awarded upon completion of the B.Tech program."
             }
         ]
     },
     "blog": [
         {
-            "id": 1,
+            "number": 1,
             "name": "Portfolio Website",
-            "shortDesc": "This website is built on React.js and CSS, and populated from a JSON file. More details to come!"
+            "shortDesc": "This website is built on React.js and CSS, and populated from a JSON file. More details to come!",
+            "cardLink": "/blog#portfolio-website"
         }
     ],
     "demo": [
         {
-            "id": 2,
+            "number": 2,
             "preview": "",
             "name": "Simple EQ Plugin",
-            "repo": "",
             "shortDesc": "Demo coming soon!",
-            "demoLink": ""
+            "demoLink": "/demo/simple-eq-plugin"
         }
     ],
     "projects": [
         {
-            "id": 1,
+            "number": 1,
             "preview": "",
             "name": "Portfolio Website",
             "status": "IN PROGRESS",
-            "repo": "",
+            "repo": "https://github.com/JavaughnS/portfolio-website",
             "shortDesc": "Learn more about this website and the methods and technologies I used to build it.",
-            "demoLink": "https://github.com/JavaughnS/portfolio-website",
+            "longDesc": "",
+            "cardLink": "/projects#portfolio-website",
             "projDoc": ""
         },
         {
-            "id": 2,
+            "number": 2,
             "preview": "",
             "name": "Simple EQ Plugin",
             "status": "IN PROGRESS",
-            "repo": "",
+            "repo": "https://github.com/JavaughnS/SimpleEQPlugin",
             "shortDesc": "An integral part of audio engineering is being able to target and manipulate specific frequency bands comprising a sound. This Simple EQ plugin is a tool for performing that manipulation.",
-            "demoLink": "",
+            "longDesc": "",
+            "cardLink": "/projects#simple-eq-plugin",
             "projDoc": ""
         }
     ]

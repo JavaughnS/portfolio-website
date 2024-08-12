@@ -3,23 +3,34 @@ import "./Cards.css";
 import CollapsibleCard from "./CollapsibleCard";
 import ImageCard from "./ImageCard";
 import InfoCard from "./InfoCard";
-// TODO: would {props.children} be better than {cards} here, I wonder
-function CardDeck({ cardType, classes, cardData }) {
+
+function CardDeck({ cardType, deckClasses, cardClasses, cardData, titleClass }) {
   switch (cardType) {
     case 'collapsible':
       return(
-        <CollapsibleCard></CollapsibleCard>
+        <div className={deckClasses}>
+          {cardData.map((data, key) => (
+            <CollapsibleCard
+              key={key}
+              cardClass={cardClasses}
+              titleClass={titleClass}
+              title={data.title}
+            >
+              {data.details}
+            </CollapsibleCard>))
+          }
+        </div>
       );
     case 'image':
       return (
-        <div className={classes}>
-          {cardData.map(data => (
+        <div className={deckClasses}>
+          {cardData.map((data, key) => (
             <ImageCard
-              key={data.id}
-              id={data.id}
+              key={key}
               cardClasses="image-card-vertical"
               src={data.preview}
               cardTitle={data.name}
+              path={deckClasses === "project-preview-deck" ? data.cardLink : data.projDoc}
             >
               {data.shortDesc}
             </ImageCard>
@@ -28,15 +39,17 @@ function CardDeck({ cardType, classes, cardData }) {
       );
     case 'info':
       return (
-        <div className={classes}>
-          {cardData.map(data => (
+        <div className={deckClasses}>
+          {cardData.map((data, key) => (
             <InfoCard
-              key={data.id}
-              id={data.id}
+              key={key}
               cardClasses="info-card"
               cardTitle={data.name}
+              path={deckClasses === "project-preview-deck" ? data.cardLink : data.projDoc}
             >
               {data.shortDesc}
+              {/* {data.repo && <br />}
+              {data.repo && <a href={data.repo}>Checkout the GitHub repository.</a>} */}
             </InfoCard>
           ))}
         </div>

@@ -2,12 +2,12 @@ import React from 'react'
 import CardDeck from "../components/CardDeck";
 
 function Demos({content}) {
-  const demoData = content.demo.toReversed();
+  const demoData = Array.from(content.demo);
 
   return (
     <div>
       <h4 className="page-title">Demos</h4>
-      <CardDeck cardType="image" classes="demos-deck" cardData={demoData} />
+      <CardDeck cardType="image" deckClasses="demos-deck" cardData={demoData} />
     </div>
   )
 }

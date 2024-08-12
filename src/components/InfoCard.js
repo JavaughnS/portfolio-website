@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Cards.css";
 
-function BasicCard({ id, cardClasses, cardTitle, children, path }) {
+function BasicCard({ cardClasses, cardTitle, children, path }) {
+  const id = cardTitle.toLowerCase().replace(/ /g, '-');
+
   return (
     <Link id={id} className={cardClasses} to={path}>
         <div className="card-info">

@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import { PLACEHOLDER_IMAGE } from "../constants";
 import "./Cards.css";
 
-function ImageCard({ id, cardClasses, src, cardTitle, children, badgeText, path, alt }) {
+function ImageCard({ cardClasses, src, cardTitle, children, badgeText, path, alt }) {
+  const id = cardTitle.toLowerCase().replace(/ /g, '-');
+
   return (
     <Link id={id} className={cardClasses} to={path}>
         <figure className="card-pic-wrap">

@@ -246,6 +246,29 @@ function About({ content }) {
           </CollapsibleCard>
         </CollapsibleCard>
         <CollapsibleCard cardClass="collapsible-card" titleClass="collapsible-card-title" title="Education">
+          <CollapsibleCard cardClass="collapsible-sub-card" titleClass="collapsible-sub-card-title" title="McMaster University">
+            <h4>Bachelor of Technology, Automation Systems Engineering Technology Co-op</h4>
+            <h5>Sep 2016 - Jun 2021</h5>
+            <p>
+              A multidisciplinary program at the intersection of chemical,
+              mechanical, electrical, and computer engineering.
+            </p>
+          </CollapsibleCard>
+          <CollapsibleCard cardClass="collapsible-sub-card" titleClass="collapsible-sub-card-title" title="Mohawk College">
+            <h4>Advanced Diploma in Chemical Engineering Technology - Process Automation</h4>
+            <h5>Sep 2016 - Jun 2021</h5>
+            <p>
+              A component of the B.Tech degree focused on chemical engineering
+              in the context of industrial manufacturing.
+            </p>
+          </CollapsibleCard>
+          <CollapsibleCard cardClass="collapsible-sub-card" titleClass="collapsible-sub-card-title" title="Mohawk College">
+            <h4>Certificate in Business</h4>
+            <h5>Sep 2016 - Jun 2021</h5>
+            <p>
+              An ACBSP accredited business degree awarded upon completion of the B.Tech program.
+            </p>
+          </CollapsibleCard>
         </CollapsibleCard>
       </div>
     </div>

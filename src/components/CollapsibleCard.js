@@ -1,6 +1,6 @@
 import React/* , { useState, useRef } */ from 'react'
 
-function CollapsibleCard({ id, cardClass, titleClass, title, children }) {
+function CollapsibleCard({ cardClass, titleClass, title, children }) {
 //   const [isExpanded, setIsExpanded] = useState(false);
 //   const ref = useRef();
 //   const [height, setHeight] = useState();
@@ -14,6 +14,7 @@ function CollapsibleCard({ id, cardClass, titleClass, title, children }) {
 //     isExpanded ? "is-expanded" : null
 //   }`;
 //   const currentHeight = isExpanded ? height : 0;
+const id = title.toLowerCase().replace(' ', '-');
   
   return (
     <details id={id} className={cardClass ? cardClass : 'collapsible-card'}>
