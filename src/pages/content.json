@@ -1,0 +1,73 @@
+{
+    "about": {
+        "skills": {
+            "concepts": ["Software Development", "Data Structures", "Algorithms", "Distributed Systems", "Scalable Solutions", "Microservices", "Functional Programming", "Unit Testing", "System Design", "Databasing", "Version Control", "APIs", "Containerization", "Test Automation", "CI/CD", "DevOps", "IaC", "Object-Oriented Programming"],
+            "technologies": ["Java", "Python", "Git", "SQL", "Linux", "Mockito", "Docker", "React.js", "AWS", "C++", "JSON", "YAML", "HTML", "CSS"]
+        },
+        "experience": [
+            {
+                "employer": "Amazon Web Services",
+                "title": "Systems Development Engineer",
+                "start": "02/2022",
+                "end": "10/2023",
+                "details": [
+                    "Enabled the launch of 21 discrete data centres serving external customers in 7 distinct geographical locations within the span of 2 years, as well as the automatic migration of thousands of AWS cloud services across hundreds of existing data centres, driving overall company growth",
+                    "Ensured reliable, available, and user-friendly development tools for thousands of internal customers, empowering them to drive sales via routine end-to-end testing, monitoring, and maintenance of SaaS offerings for continuous functionality and high performance",
+                    "Drove efficiency via facilitation of Agile methodology by leading and participating in regular scrum, design, informational, process improvement, and planning meetings, which enabled my team to complete tasks in 8 days or less",
+                    "Upheld high performance and reliability of SaaS offerings by resolving 1-5 technical issues daily, which minimized costs by increasing software stability",
+                    "Increased service adoption for my team by approx. 3 customers per week by troubleshooting user issues, and researching and answering user questions in our forum in a timely fashion",
+                    "Improved operations by analyzing workflows, identifying and addressing gaps in existing processes as well as designing new ones, and continuously iterating on solutions",
+                    "Exceptional oral and written communication skills, and professional experience as a business/engineering leader responsible for communicating information to technical and non-technical internal and external clients"
+                ]
+            }
+        ],
+        "education": [
+            {
+                "institution": "McMaster University",
+                "title": "Bachelor of Technology, Automation Engineering Technology Co-op",
+                "start": "09/2016",
+                "end": "06/2021",
+                "details": ""
+            }
+        ]
+    },
+    "blog": [
+        {
+            "id": 1,
+            "name": "Portfolio Website",
+            "shortDesc": "This website is built on React.js and CSS, and populated from a JSON file. More details to come!"
+        }
+    ],
+    "demo": [
+        {
+            "id": 2,
+            "preview": "",
+            "name": "Simple EQ Plugin",
+            "repo": "",
+            "shortDesc": "Demo coming soon!",
+            "demoLink": ""
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "preview": "",
+            "name": "Portfolio Website",
+            "status": "IN PROGRESS",
+            "repo": "",
+            "shortDesc": "Learn more about this website and the methods and technologies I used to build it.",
+            "demoLink": "https://github.com/JavaughnS/portfolio-website",
+            "projDoc": ""
+        },
+        {
+            "id": 2,
+            "preview": "",
+            "name": "Simple EQ Plugin",
+            "status": "IN PROGRESS",
+            "repo": "",
+            "shortDesc": "An integral part of audio engineering is being able to target and manipulate specific frequency bands comprising a sound. This Simple EQ plugin is a tool for performing that manipulation.",
+            "demoLink": "",
+            "projDoc": ""
+        }
+    ]
+}

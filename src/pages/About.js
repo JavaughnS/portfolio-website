@@ -2,7 +2,7 @@ import React from 'react';
 import CollapsibleCard from '../components/CollapsibleCard';
 import * as myConstants from "../constants";
 
-function About() {
+function About({ content }) {
   return (
     <div>
       <h1 className='about-page-title'>Javaughn Smith</h1>
@@ -33,7 +33,7 @@ function About() {
           </div>
           <span>The links above will take you to my resume, linkedin, and github, respectively.</span>
         </div>
-        <CollapsibleCard titleClass="collapsible-card-title" title="Overview">
+        <CollapsibleCard titleClass="collapsible-card-title" title="Introduction">
           <p>
             Back-end developer with ~2 years of experience in analysis, design, development, and
             maintenance of distributed systems and cloud computing for digital enterprising.

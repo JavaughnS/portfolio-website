@@ -19,10 +19,10 @@ function Navbar() {
     };
 
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary App-nav">
-      <div class="container-fluid">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary App-nav">
+      <div className="container-fluid">
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -30,11 +30,11 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
         <div>
           {/* // TODO: change to button that toggles light and dark theme */}
-          <Link class="navbar-brand m-2" href="/"> 
+          <Link className="navbar-brand m-2" href="/"> 
             JS
           </Link>
         </div>
@@ -58,51 +58,51 @@ function Navbar() {
             onToggle={handleToggle}
           />
         </div>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <ul class="navbar-nav" aria-current="page">
-            <li class="nav-item">
-              <NavLink class="nav-link" to="/">
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul className="navbar-nav" aria-current="page">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/">
                 Home
               </NavLink>
             </li>
-            <li class="nav-item">
-              <NavLink class="nav-link" to="/about">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/about">
                 About
               </NavLink>
             </li>
-            <li class="nav-item">
-              <NavLink class="nav-link" to="/projects">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/projects">
                 Projects
               </NavLink>
             </li>
-            <li class="nav-item">
-              <NavLink class="nav-link" to="/demos">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/demos">
                 Demos
               </NavLink>
             </li>
-            <li class="nav-item">
-              <NavLink class="nav-link" to="/blog">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/blog">
                 Blog
               </NavLink>
             </li>
-            <li class="nav-item">
-              <NavLink class="nav-link" to="/contact-me">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/contact-me">
                 Contact
               </NavLink>
             </li>
           </ul>
         </div>
-        <form class="d-flex justify-content-end" role="search">
+        {/* <form className="d-flex justify-content-end" role="search">
           <input
-            class="form-control me-2"
+            className="form-control me-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success" type="submit">
+          <button className="btn btn-outline-success" type="submit">
             Search
           </button>
-        </form>
+        </form> */}
       </div>
     </nav>
   );

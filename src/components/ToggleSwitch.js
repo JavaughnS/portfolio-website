@@ -10,10 +10,9 @@ function ToggleSwitch({ id, classes, labelText, isDisabled, onToggle }) {
   };
 
   return (
-    <>
-      <div class={classes}>
+      <div className={classes}>
         <input
-          class={"form-check-input"}
+          className={"form-check-input"}
           type="checkbox"
           role="switch"
           id={id}
@@ -21,11 +20,10 @@ function ToggleSwitch({ id, classes, labelText, isDisabled, onToggle }) {
           onChange={handleChange}
           disabled={isDisabled}
         />
-        <label class="form-check-label" for={id}>
+        <label className="form-check-label" htmlFor={id}>
           {isChecked ? labelText[0] : labelText[1]}
         </label>
       </div>
-    </>
   );
 }
 

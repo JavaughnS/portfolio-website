@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Cards.css";
 
-function BasicCard({ cardClasses, title, description, path }) {
+function BasicCard({ id, cardClasses, cardTitle, children, path }) {
   return (
-    <Link className={cardClasses} to={path}>
+    <Link id={id} className={cardClasses} to={path}>
         <div className="card-info">
-            {title && <h5 className="card-title">{title}</h5>}
-            {description && <p className="card-text">{description}</p>}
+            {cardTitle && <h5 className="card-title">{cardTitle}</h5>}
+            {children && <p className="card-text">{children}</p>}
         </div>
     </Link>
   );

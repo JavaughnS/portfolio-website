@@ -1,33 +1,13 @@
 import React from 'react'
 import CardDeck from "../components/CardDeck";
-import ImageCard from "../components/ImageCard";
 
-function Demos() {
-  const demoCards = [
-    <ImageCard
-      cardClasses="demo-card"
-      src="images/placeholder.JPG"
-      title="This Website!"
-      description="Coming Soon"
-    />,
-    <ImageCard
-      cardClasses="demo-card"
-      src="images/placeholder.JPG"
-      title="Project 2"
-      description="Coming Soon"
-    />,
-    <ImageCard
-      cardClasses="demo-card"
-      src="images/placeholder.JPG"
-      title="Project 3"
-      description="Coming Soon"
-    />
-  ];
+function Demos({content}) {
+  const demoData = content.demo.toReversed();
 
   return (
     <div>
       <h4 className="page-title">Demos</h4>
-      <CardDeck classes="demos-deck" cards={demoCards} />
+      <CardDeck cardType="image" classes="demos-deck" cardData={demoData} />
     </div>
   )
 }
