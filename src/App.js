@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { Home, About, Projects, Demos, Blog, ContactMe } from "./pages";
-import SiteFooter from "./components/Footer";
+// import Footer from "./components/Footer";
 import content from "./pages/content.json";
 
 import "bootstrap/dist/css/bootstrap.css";
@@ -20,7 +20,7 @@ function App() {
         <Route path="/blog" element={<Blog content={content} />} />
         <Route path="/contact-me" element={<ContactMe />} />
       </Routes>
-      <SiteFooter />
+      {/* <Footer /> */}
     </div>
   );
 }
