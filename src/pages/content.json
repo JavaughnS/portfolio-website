@@ -19,6 +19,40 @@
                     "Improved operations by analyzing workflows, identifying and addressing gaps in existing processes as well as designing new ones, and continuously iterating on solutions",
                     "Exceptional oral and written communication skills, and professional experience as a business/engineering leader responsible for communicating information to technical and non-technical internal and external clients"
                 ]
+            },
+            {
+                "entity": "Ulteig",
+                "title": "System Integrator",
+                "start": "06/2021",
+                "end": "02/2022",
+                "details": [
+                    "Developed PLC logic for Allen-Bradley MicroLogix processors automating control of sensors and actuators used in water and wastewater treatment processes across various cities.",
+                    "Designed and programmed HMI screens facilitating simplistic and efficient local and remote monitoring and control of automated systems.",
+                    "Generated and updated documentation of treatment systems to clearly communicate their design and function."
+                ]
+            },
+            {
+                "entity": "Mixto",
+                "title": "Client Accounts Coordinator",
+                "start": "03/2021",
+                "end": "05/2021",
+                "details": [
+                    "Coordinated internal operations at multiple levels to consistently deliver high quality service for our clientele within 3 business days",
+                    "Lead meetings with clients for large scale, long term, high sensitivity projects ensuring that requirements and expectations were communicated clearly between internal and external stakeholders",
+                    "Trained new employees and developed a manual of tasks and best practices for success"
+                ]
+            },
+            {
+                "entity": "Halton Region",
+                "title": "SCADA Technology Co-op Student",
+                "start": "01/2019",
+                "end": "08/2019",
+                "details": [
+                    "Developed a VB application for secure monitoring, collection, and historizing of hundreds of thousands of unique data points used in water and wastewater treatment process control and auditing across the region",
+                    "Performed firmware updates, device configuration, and programming on Allen-Bradley ControlLogix. MicroLogix, SLCs, and Power Monitors used in water and wastewater treatment processes across the region",
+                    "Generated electrical schematics, network drawings, design drawings, and P&IDs for new device installations using AutoCAD",
+                    "Reviewed and updated network architecture drawings in AutoCAD which were used for keeping track of devices on the WAN and improving efficiency in the process of remotely accessing and controlling those devices"
+                ]
             }
         ],
         "education": [
@@ -49,41 +83,46 @@
         {
             "number": 1,
             "name": "Portfolio Website",
-            "shortDesc": "This website is built on React.js and CSS, and populated from a JSON file. More details to come!",
-            "cardLink": "/blog#portfolio-website"
+            "shortDesc": "This website was built by me from scratch using React.js and CSS as well as a bit of JSON. Click here to read more about it!",
+            "longDesc": "",
+            "path": "/blog#portfolio-website",
+            "doc": "https://docs.google.com/document/d/1dkMhavEo6vvuaJclAmEFLJl_hYpnJ_7YlzYwBzZhiGg/edit#heading=h.4pujimuihw23"
         }
     ],
     "demo": [
         {
             "number": 2,
-            "preview": "",
             "name": "Simple EQ Plugin",
+            "preview": "",
+            "prevAlt": "",
             "shortDesc": "Demo coming soon!",
-            "demoLink": "/demo/simple-eq-plugin"
+            "path": "/demo/simple-eq-plugin"
         }
     ],
     "projects": [
         {
             "number": 1,
-            "preview": "",
             "name": "Portfolio Website",
+            "preview": "",
+            "prevAlt": "",
             "status": "IN PROGRESS",
             "repo": "https://github.com/JavaughnS/portfolio-website",
             "shortDesc": "Learn more about this website and the methods and technologies I used to build it.",
             "longDesc": "",
-            "cardLink": "/projects#portfolio-website",
-            "projDoc": ""
+            "path": "/projects#portfolio-website",
+            "doc": ""
         },
         {
             "number": 2,
-            "preview": "",
             "name": "Simple EQ Plugin",
+            "preview": "",
+            "prevAlt": "",
             "status": "IN PROGRESS",
             "repo": "https://github.com/JavaughnS/SimpleEQPlugin",
             "shortDesc": "An integral part of audio engineering is being able to target and manipulate specific frequency bands comprising a sound. This Simple EQ plugin is a tool for performing that manipulation.",
             "longDesc": "",
-            "cardLink": "/projects#simple-eq-plugin",
-            "projDoc": ""
+            "path": "/projects#simple-eq-plugin",
+            "doc": ""
         }
     ]
 }

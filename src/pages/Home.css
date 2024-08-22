@@ -1,0 +1,137 @@
+#home__page {
+    /* outline: 2px solid yellow; */
+    margin: 0 1rem;
+    height: auto;
+    width: auto;
+    padding: 0;
+}
+
+
+#home__upper__content {
+    /* outline: 2px solid yellow; */
+    box-sizing: border-box;
+    margin: 0.75rem auto;
+    min-width: 470;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.introduction__section {
+    /* outline: 2px solid yellow; */
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: inline-block;
+    min-width: 470px;
+    height: auto;
+    width: 45%;
+    /* padding: 0 30px 0 0; */
+    vertical-align: top;
+}
+
+.identifier {
+    /* outline: 2px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+}
+
+.pfp__container {
+    position: relative;
+    display: inline-block;
+    height: 440px;
+    min-width: 235px;
+    width: 52%;
+    overflow: clip;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
+    vertical-align: top;
+}
+
+.pfp {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform-origin: bottom;
+    transform: scale(1.5);
+    object-fit: cover;
+}
+
+.greeting {
+    /* outline: 2px solid yellow; */
+    display: inline-block;
+    min-width: 215px;
+    width: 40%;
+}
+
+.projects__preview {
+  /* outline: 2px solid yellow; */
+  margin: 0 auto;
+  display: inline-block;
+  min-width: 470px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.project__preview__deck {
+  /* outline: 2px solid yellow; */
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 25px 0;
+  width: 100%;
+  min-width: 299px;
+  overflow-x: scroll;
+  box-sizing: border-box;
+}
+
+.image__card:first-child {
+  margin-left: 0.75rem;
+}
+
+.image__card:last-child {
+  margin-right: 0;
+}
+/* TODO: the scrollbar classes below are supposed
+    to force div scrollbar to always remain
+    visible specifically in Chrome on macOS,
+    but other styling for reactive divs seems
+    to be causing these to fail.
+    Investigate and address.
+    Hypothesis: maybe it has to do with the
+    priority different styles are given?
+*/
+.project__preview__deck::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 10px;
+}
+
+.project__preview__deck::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+#home__lower__content {
+    display: grid;
+}
+
+/* @media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+} */
+
+/* @media only screen and (min-width: 1024px) {
+  .scrollable-wrapper {
+    display: flex;
+  }
+} */
+
+/* @media only screen and (max-width: 1024px) {
+  .card {
+    margin-bottom: 2rem;
+  }
+} */

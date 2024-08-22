@@ -1,25 +1,25 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 // import MouseTrail from "./MouseTrail";
 import ToggleSwitch from "./ToggleSwitch";
 
 function Navbar() {
-    const [trailDisabled, setTrailDisabled] = useState(true);
-    // const [trailType, setTrailType] = useState(false);
-    // let languages = ["A", "B", "C", "D", "E"];
-    // let employers = ["F", "G", "You?"];
-    const handleToggle = (id, isChecked) => {
+  const [trailDisabled, setTrailDisabled] = useState(true);
+  // const [trailType, setTrailType] = useState(false);
+  // let languages = ["A", "B", "C", "D", "E"];
+  // let employers = ["F", "G", "You?"];
+  const handleToggle = (id, isChecked) => {
+    console.log(trailDisabled);
+    if (id === "mouseTrailStatus") {
       console.log(trailDisabled);
-      if (id === "mouseTrailStatus") {
-        console.log(trailDisabled);
-        setTrailDisabled(isChecked);
-      } /*else {
+      setTrailDisabled(isChecked);
+    } /*else {
         setTrailType(isChecked ? employers : languages);
       }*/
-    };
+  };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary App-nav">
+    <nav id="navigation" className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -34,7 +34,7 @@ function Navbar() {
         </button>
         <div>
           {/* // TODO: change to button that toggles light and dark theme */}
-          <Link className="navbar-brand m-2" href="/"> 
+          <Link className="navbar-brand m-2" href="/">
             JS
           </Link>
         </div>

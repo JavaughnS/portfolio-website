@@ -1,15 +1,21 @@
-import React from 'react'
+import React from "react";
 import CardDeck from "../components/CardDeck";
+import ImageCard from "../components/ImageCard";
+import "./Demos.css";
 
-function Demos({content}) {
-  const demoData = Array.from(content.demo);
+function Demos({ content }) {
+  const CALLER = "demos";
 
   return (
-    <div>
-      <h4 className="page-title">Demos</h4>
-      <CardDeck cardType="image" deckClasses="demos-deck" cardData={demoData} />
+    <div id="demos-page">
+      <h1>Demos</h1>
+      <CardDeck classes="demos__deck">
+        {content.demo.map((data, key) => (
+          <ImageCard key={key} caller={CALLER} card={data}/>
+        ))}
+      </CardDeck>
     </div>
-  )
+  );
 }
 
-export default Demos
+export default Demos;
