@@ -28,7 +28,7 @@ function About({ content }) {
   return (
     <div id="about-page">
       <h1>Javaughn Smith</h1>
-      <div>
+      <div className="space">
         <div className="centered">
           <a
             href={myConstants.RESUME}
@@ -57,7 +57,7 @@ function About({ content }) {
           </a>
         </div>
         <p className="centered">
-          The links above will take you to my resume, linkedin, and github,
+          Click the links above for my resume, LinkedIn profile, and GitHub,
           respectively.
         </p>
       </div>
@@ -84,7 +84,7 @@ function About({ content }) {
                 </li>
               ))}
             </ul>{" "}
-            {/* hover arrows */}
+            {/* TODO: hover arrows */}
           </div>
           <div className="scroller" data-direction="right">
             <ul className="tag__list scroller__inner">
@@ -99,7 +99,7 @@ function About({ content }) {
                 </li>
               ))}
             </ul>{" "}
-            {/* hover arrows */}
+            {/* TODO: hover arrows */}
           </div>
         </CollapsibleCard>
         <CollapsibleCard caller={CALLER} title="Experience">
@@ -109,7 +109,6 @@ function About({ content }) {
                 key={nestKey}
                 caller={CALLER}
                 title={data.entity}
-                nested={true}
               >
                 <h4>{data.title}</h4>
                 <h5>
@@ -131,7 +130,6 @@ function About({ content }) {
                 key={nestKey}
                 caller={CALLER}
                 title={data.entity}
-                nested={true}
               >
                 <h4>{data.title}</h4>
                 <h5>

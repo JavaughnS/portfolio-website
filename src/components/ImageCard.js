@@ -8,7 +8,7 @@ function ImageCard({
   card,
   badgeText
 }) {
-  const id = card.name.toLowerCase().replace(/ /g, "-");
+  const id = card.name.toLowerCase().replace(/[ /]/g, "-").replace(/:/g, "");
   const classes = caller === "demos" ? "demo__card" : "image__card";
   const path = card.path ? card.path : undefined;
 

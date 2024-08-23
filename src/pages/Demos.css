@@ -11,6 +11,10 @@
     justify-content: center;
 }
 
+.demos__deck a {
+    color: inherit;
+}
+
 .demo__card {
     flex: 0 0 auto;
     margin-right: 2rem;

@@ -55,7 +55,9 @@ a {
 }
 
 a:hover,
-a:focus {
+a:focus,
+.image__card:hover h3,
+.image__card:focus h3 {
     color: var(--app-active-link);
 }
 
@@ -119,7 +121,21 @@ a:focus {
     display: block;
     width: 100%;
     height: auto;
-  }
+}
+
+.under__construction {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.under__construction video {
+    box-shadow: 0 0.4rem 1.25rem 0 rgba(0, 0, 0, 0.19);
+    -webkit-filter: drop-shadow(0 0.4rem 1.25rem rgba(0, 0, 0, 0.017));
+    filter: drop-shadow(0 0.4rem 1.25rem rgba(0, 0, 0, 0.017));
+}
   
   /* @media (prefers-reduced-motion: no-preference) {
     

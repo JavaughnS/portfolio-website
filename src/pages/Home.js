@@ -8,8 +8,11 @@ function Home({ content }) {
   const CALLER = "home";
   const projects = Array.from(content.projects);
   const entries = Array.from(content.blog);
-  const maxLen = projects.length > 5 && entries.length > 5 ? 5 : Math.max(projects.length, entries.length);
-  
+  const maxLen =
+    projects.length > 5 && entries.length > 5
+      ? 5
+      : Math.max(projects.length, entries.length);
+
   let projPrevCardData = [];
   let blogPrevCardData = [];
   for (let i = 0; i < maxLen; i++) {
@@ -29,7 +32,7 @@ function Home({ content }) {
           <div className="identifier">
             <figure className="pfp__container">
               <img
-                src="images/temp-profile-pic.JPG"
+                src="media/temp-profile-pic.JPG"
                 alt="Javaughn Smith"
                 className="pfp"
               />
@@ -47,7 +50,7 @@ function Home({ content }) {
           <h2>Latest Project Activity</h2>
           <CardDeck classes="project__preview__deck">
             {projPrevCardData.map((data, key) => (
-              <ImageCard key={key} caller={CALLER} card={data}/>
+              <ImageCard key={key} caller={CALLER} card={data} />
             ))}
           </CardDeck>
         </div>
@@ -56,7 +59,7 @@ function Home({ content }) {
         <h2>Latest Blog Posts</h2>
         <CardDeck classes="general__card__deck">
           {blogPrevCardData.map((data, key) => (
-            <BasicCard key={key} caller={CALLER} card={data}/>
+            <BasicCard key={key} caller={CALLER} card={data} />
           ))}
         </CardDeck>
       </div>

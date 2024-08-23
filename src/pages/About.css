@@ -1,6 +1,10 @@
 #about-page {
+    margin: 0 auto;
+    height: auto;
+    width: 75%;
+    padding: 1rem 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
 }
 
@@ -19,9 +23,21 @@
 
 }
 
+.icons {
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    align-items: center;
+}
+
 .centered {
-    margin: 0 auto;
+    margin: 0.5rem auto;
     text-align: center;
+}
+
+.space {
+    margin-bottom: 0.5rem;
 }
 
 .tag {

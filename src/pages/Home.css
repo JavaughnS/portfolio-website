@@ -1,8 +1,8 @@
 #home__page {
     /* outline: 2px solid yellow; */
-    margin: 0 1rem;
+    margin: 0 auto;
     height: auto;
-    width: auto;
+    width: 75%;
     padding: 0;
 }
 
@@ -78,31 +78,22 @@
 
 .project__preview__deck {
   /* outline: 2px solid yellow; */
+  box-sizing: border-box;
   display: flex;
   flex-wrap: nowrap;
   padding: 25px 0;
   width: 100%;
+  max-width: 100%;
   min-width: 299px;
   overflow-x: scroll;
-  box-sizing: border-box;
+  overflow-y: hidden;
+  scrollbar-gutter: stable;
 }
 
 .image__card:first-child {
   margin-left: 0.75rem;
 }
 
-.image__card:last-child {
-  margin-right: 0;
-}
-/* TODO: the scrollbar classes below are supposed
-    to force div scrollbar to always remain
-    visible specifically in Chrome on macOS,
-    but other styling for reactive divs seems
-    to be causing these to fail.
-    Investigate and address.
-    Hypothesis: maybe it has to do with the
-    priority different styles are given?
-*/
 .project__preview__deck::-webkit-scrollbar {
     -webkit-appearance: none;
     height: 10px;
@@ -113,9 +104,12 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-
 #home__lower__content {
     display: grid;
+}
+
+.general__card__deck a {
+    color: inherit;
 }
 
 /* @media only screen and (min-width: 1200px) {

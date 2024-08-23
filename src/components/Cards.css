@@ -1,12 +1,12 @@
 .basic__card {
-  display: grid;
-  margin-bottom: 0.2rem;
-  padding: 0.2rem 4px;
   box-sizing: border-box;
+  margin: 1rem auto;
   height: auto;
   width: auto;
-  border: 1px solid rgba(53, 53, 53, 0.477);
+  /* border: 1px solid rgba(53, 53, 53, 0.477); */
   border-radius: 10px;
+  display: grid;
+  padding: 1rem 1.2rem;
   overflow: clip;
   box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.19);
   -webkit-filter: drop-shadow(0 0.2rem 0.4rem rgba(0, 0, 0, 0.017));
@@ -15,29 +15,20 @@
 }
 
 .collapsible__card {
-  color: rgba(207, 207, 207, 0.918);
-  display: grid;
-  padding: 0 0 1rem;
-  margin: 0 auto;
+  margin: 1.5rem auto;
   height: auto;
   width: 96%;
   border-radius: 10px;
+  display: grid;
+  padding: 1rem 1.75rem;
+  color: rgba(207, 207, 207, 0.918);
   box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.19);
   -webkit-filter: drop-shadow(0 0.2rem 0.4rem rgba(0, 0, 0, 0.017));
   filter: drop-shadow(0 0.2rem 0.4rem rgba(0, 0, 0, 0.017));
 }
 
-.collapsible__sub__card {
-  display: grid;
-  padding: 0 1rem 1rem ;
-  margin: 0 auto;
-  height: auto;
+.collapsible__card .collapsible__card {
   width: 98%;
-  border-radius: 10px;
-  box-shadow: 0 0 0.4rem 0 rgba(0, 0, 0, 0.19);
-  -webkit-filter: drop-shadow(0 0.2rem 0.4rem rgba(0, 0, 0, 0.017));
-  filter: drop-shadow(0 0.2rem 0.4rem rgba(0, 0, 0, 0.017));
-  box-sizing: border-box;
 }
 
 .image__card {
@@ -88,17 +79,21 @@
 
 .image__card__text {
   height: 55%;
+  padding: 1rem 1.2rem;
 }
 
-.basic__card h3,
 .collapsible__card summary {
   color: rgba(242, 242, 242, 0.918);
-  font-size: 1.75rem;
+  font-size: 1.9rem;
 }
 
-.collapsible__sub__card summary {
+.collapsible__card .collapsible__card summary {
   color: rgba(242, 242, 242, 0.918);
   font-size: 1.5rem;
+}
+
+.collapsible__card li {
+  margin: 0.75rem 0;
 }
 
 .image__card h3 {

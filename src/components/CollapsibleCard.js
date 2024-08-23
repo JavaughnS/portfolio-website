@@ -1,6 +1,6 @@
 import React /* , { useState, useRef } */ from "react";
 
-function CollapsibleCard({ caller, title, nested, children }) {
+function CollapsibleCard({ caller, title, children }) {
   //   const [isExpanded, setIsExpanded] = useState(false);
   //   const ref = useRef();
   //   const [height, setHeight] = useState();
@@ -14,10 +14,13 @@ function CollapsibleCard({ caller, title, nested, children }) {
   //     isExpanded ? "is-expanded" : null
   //   }`;
   //   const currentHeight = isExpanded ? height : 0;
-  const id = title.toLowerCase().replace(" ", "-");
+  const id = title.toLowerCase().replace(/[ /]/g, "-").replace(/:/g, "");
 
   return (
-    <details id={id} className={nested ? "collapsible__sub__card" : "collapsible__card"}>
+    <details
+      id={id}
+      className="collapsible__card"
+    >
       <summary>{title}</summary>
       {children}
     </details>

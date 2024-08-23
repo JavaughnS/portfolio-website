@@ -1,6 +1,13 @@
-#blog-page {
-    margin: 0 1rem;
+.blog__page {
+    margin: 0 auto;
     height: auto;
-    width: auto;
-    padding: 0;
+    width: 75%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.blog__page a {
+    color: var(--app-inactive-link);
 }

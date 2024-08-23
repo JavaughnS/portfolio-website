@@ -1,6 +1,8 @@
 import React from "react";
 import CardDeck from "../components/CardDeck";
 import CollapsibleCard from "../components/CollapsibleCard";
+import "./Projects.css";
+
 // TODO: add tooltips to doc links to communicate that it will be an external link to a design/reflection doc
 function Projects({ content }) {
   const CALLER = "projects";

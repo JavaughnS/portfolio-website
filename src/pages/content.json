@@ -84,9 +84,25 @@
             "number": 1,
             "name": "Portfolio Website",
             "shortDesc": "This website was built by me from scratch using React.js and CSS as well as a bit of JSON. Click here to read more about it!",
-            "longDesc": "",
+            "longDesc": "This website was built to be an information hub where my software development activity is concerned. It was built using React.js, CSS, and JSON.",
             "path": "/blog#portfolio-website",
-            "doc": "https://docs.google.com/document/d/1dkMhavEo6vvuaJclAmEFLJl_hYpnJ_7YlzYwBzZhiGg/edit#heading=h.4pujimuihw23"
+            "doc": "https://docs.google.com/document/d/1dkMhavEo6vvuaJclAmEFLJl_hYpnJ_7YlzYwBzZhiGg/edit#heading=h.f2wcq8qmi311"
+        },
+        {
+            "number": 2,
+            "name": "Challenge Problem: Add Two Numbers",
+            "shortDesc": "LeetCode #2; Difficulty: Medium",
+            "longDesc": "Given two non-empty linked lists representing two non-negative integers, where the digits are stored in reverse order and each of their nodes contains a single digit, add the two numbers and return the sum as a linked list.",
+            "path": "/blog#challenge-problem-add-two-numbers",
+            "doc": "https://docs.google.com/document/d/1dkMhavEo6vvuaJclAmEFLJl_hYpnJ_7YlzYwBzZhiGg/edit#heading=h.2k5k65mhkh0h"
+        },
+        {
+            "number": 3,
+            "name": "Challenge Problem: Longest Substring w/o Repeating Characters",
+            "shortDesc": "LeetCode #3; Difficulty: Medium",
+            "longDesc": "Given a string s, find the length of the longest substring without repeating characters.",
+            "path": "/blog#challenge-problem-longest-substring-w-o-repeating-characters",
+            "doc": "https://docs.google.com/document/d/1dkMhavEo6vvuaJclAmEFLJl_hYpnJ_7YlzYwBzZhiGg/edit#heading=h.1kf31fszd92n"
         }
     ],
     "demo": [
@@ -108,7 +124,7 @@
             "status": "IN PROGRESS",
             "repo": "https://github.com/JavaughnS/portfolio-website",
             "shortDesc": "Learn more about this website and the methods and technologies I used to build it.",
-            "longDesc": "",
+            "longDesc": "This website was built to be an information hub where my software development activity is concerned.",
             "path": "/projects#portfolio-website",
             "doc": ""
         },
@@ -119,8 +135,8 @@
             "prevAlt": "",
             "status": "IN PROGRESS",
             "repo": "https://github.com/JavaughnS/SimpleEQPlugin",
-            "shortDesc": "An integral part of audio engineering is being able to target and manipulate specific frequency bands comprising a sound. This Simple EQ plugin is a tool for performing that manipulation.",
-            "longDesc": "",
+            "shortDesc": "An application for isolating and manipulating the frequencies of a digital signal.",
+            "longDesc": "In audio engineering, being able to isolate and manipulate the tens of thousands of audible frequencies that comprise a sound is invaluable. This Simple EQ plugin is an application which offers such functionality.",
             "path": "/projects#simple-eq-plugin",
             "doc": ""
         }
