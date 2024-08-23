@@ -2,6 +2,7 @@ import React from "react";
 import CollapsibleCard from "../components/CollapsibleCard";
 import * as myConstants from "../constants";
 import CardDeck from "../components/CardDeck";
+import Scroller from "../components/Scroller";
 import "./About.css";
 
 function About({ content }) {
@@ -71,42 +72,18 @@ function About({ content }) {
           </p>
         </CollapsibleCard>
         <CollapsibleCard caller={CALLER} title="Skills">
-          <div className="scroller">
-            <ul className="tag__list scroller__inner">
-              {content.about.skills.concepts.map((skill, skillKey) => (
-                <li key={skillKey} className="tag">
-                  {skill}
-                </li>
-              ))}
-              {content.about.skills.concepts.map((skill, skillKey) => (
-                <li key={skillKey} className="tag" aria-hidden="true">
-                  {skill}
-                </li>
-              ))}
-            </ul>{" "}
-            {/* TODO: hover arrows */}
-          </div>
-          <div className="scroller" data-direction="right">
-            <ul className="tag__list scroller__inner">
-              {content.about.skills.technologies.map((skill, skillKey) => (
-                <li key={skillKey} className="tag">
-                  {skill}
-                </li>
-              ))}
-              {content.about.skills.technologies.map((skill, skillKey) => (
-                <li key={skillKey} className="tag" aria-hidden="true">
-                  {skill}
-                </li>
-              ))}
-            </ul>{" "}
-            {/* TODO: hover arrows */}
-          </div>
+          <Scroller>
+            {content.about.skills.concepts}
+          </Scroller>
+          <Scroller direction={true}>
+            {content.about.skills.technologies}
+          </Scroller>
         </CollapsibleCard>
         <CollapsibleCard caller={CALLER} title="Experience">
           <CardDeck classes="general__card__deck">
-            {content.about.experience.map((data, nestKey) => (
+            {content.about.experience.map((data, cardKey) => (
               <CollapsibleCard
-                key={nestKey}
+                key={cardKey}
                 caller={CALLER}
                 title={data.entity}
               >
@@ -125,9 +102,9 @@ function About({ content }) {
         </CollapsibleCard>
         <CollapsibleCard caller={CALLER} title="Education">
           <CardDeck classes="general__card__deck">
-            {content.about.education.map((data, nestKey) => (
+            {content.about.education.map((data, cardKey) => (
               <CollapsibleCard
-                key={nestKey}
+                key={cardKey}
                 caller={CALLER}
                 title={data.entity}
               >

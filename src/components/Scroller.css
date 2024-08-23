@@ -1,0 +1,48 @@
+.scroller {
+    max-width: 100vw;
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+    );
+    mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+    );
+}
+
+.scroller:hover .scroller__inner {
+    animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .scroller__inner {
+        display: flex;
+        gap: 1rem;
+        padding-block: 1rem;
+        width: fit-content;
+        flex-wrap: nowrap;
+        animation: scroll var(--my-animation-duration, 140s)
+            var(--my-animation-direction, forwards) linear infinite;
+    }
+}
+
+.scroller[data-direction="right"] {
+    --my-animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+    --my-animation-direction: forwards;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
