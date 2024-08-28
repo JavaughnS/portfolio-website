@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 // import MouseTrail from "./MouseTrail";
 import ToggleSwitch from "./ToggleSwitch";
+import "./Navbar.css"
 
-function Navbar() {
+function Navbar({ themeToggle }) {
   const [trailDisabled, setTrailDisabled] = useState(true);
   // const [trailType, setTrailType] = useState(false);
   // let languages = ["A", "B", "C", "D", "E"];
   // let employers = ["F", "G", "You?"];
-  const handleToggle = (id, isChecked) => {
+  const toggleTrail = (id, isChecked) => {
     console.log(trailDisabled);
     if (id === "mouseTrailStatus") {
       console.log(trailDisabled);
@@ -19,32 +19,19 @@ function Navbar() {
   };
 
   return (
-    <nav id="navigation" className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg navigation">
       <div className="container-fluid">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div>
-          {/* // TODO: change to button that toggles light and dark theme */}
-          <Link className="navbar-brand m-2" href="/">
-            JS
-          </Link>
-        </div>
+        <button className="navbar-brand" onClick={themeToggle}>JS</button>
         <div className="nav-switch">
           <ToggleSwitch
             id="mouseTrailStatus"
             classes="form-check form-switch"
             labelText={["On", "Off"]}
             isDisabled={false}
-            onToggle={handleToggle}
+            onToggle={toggleTrail}
           />
           <ToggleSwitch
             id="mouseTrailType"
@@ -55,56 +42,38 @@ function Navbar() {
             }
             labelText={["Exp", "Lang"]}
             isDisabled={trailDisabled}
-            onToggle={handleToggle}
+            onToggle={toggleTrail}
           />
         </div>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <ul className="navbar-nav" aria-current="page">
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">
-                Home
-              </NavLink>
+              <a className="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about">
-                About
-              </NavLink>
+              <a className="nav-link" href="/about">About</a>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/projects">
-                Projects
-              </NavLink>
+              <a className="nav-link" href="/projects">Projects</a>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/demos">
-                Demos
-              </NavLink>
+              <a className="nav-link" href="/demos">Demos</a>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/blog">
-                Blog
-              </NavLink>
+              <a className="nav-link" aria-current="page" href="/blog">Blog</a>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact-me">
-                Contact
-              </NavLink>
+              <a className="nav-link" href="/contact-me">Contact</a>
             </li>
           </ul>
+          {/* <form className="d-flex" role="search">
+            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button className="btn btn-outline-success" type="submit">Search</button>
+          </form> */}
         </div>
-        {/* <form className="d-flex justify-content-end" role="search">
-          <input
-            className="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button className="btn btn-outline-success" type="submit">
-            Search
-          </button>
-        </form> */}
       </div>
     </nav>
+    
   );
 }
 
