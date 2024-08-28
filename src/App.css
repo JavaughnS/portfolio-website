@@ -52,9 +52,7 @@ h3 {
 }
 
 /* General Site Text */
-p {
-    
-}
+/* p {} */
 
 a {
     color: var(--app-inactive-link);

@@ -15,12 +15,20 @@
     width: 100%;
 }
 
-#about-page h4 {
+#about-page summary {
+    color: inherit;
+}
 
+#about-page h4 {
+    color: inherit;
 }
 
 #about-page h5 {
+    color: inherit;
+}
 
+#about-page p {
+    color: inherit;
 }
 
 .icons {
