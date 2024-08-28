@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { Home, About, Projects, Demos, Blog, ContactMe } from "./pages";
@@ -8,11 +8,11 @@ import content from "./pages/content.json";
 import "./App.css"; // Note to self: later css imports will overwrite earlier ones
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('isDarkMode') === 'true';
-    setIsDarkMode(savedTheme);
-  }, []);
+  // Initialize isDarkMode from localStorage or default to true (dark mode)
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem('isDarkMode');
+    return savedTheme !== null ? savedTheme === 'true' : true;
+  });
   const toggleTheme = () => {
     const newTheme = !isDarkMode;
     setIsDarkMode(newTheme);
